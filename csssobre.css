@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+.logo {
+    font-size: 2em;
+    color: #fff;
+    user-select: none;
+}
+
+.navegacao a {
+    position: relative;
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.navegacao a:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform: scale(0);
+    transition: transform .5s;
+}
+
+.navegacao a:hover:after {
+    transform: scale(1);
+}
+
+.navegacao .btnLogin-popup {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .5s;
+}
+
+.navegacao .btnLogin-popup:hover {
+    background: #fff;
+    color: #162938;
+}
+
+body{
+    background: white;
+    background: url(5cb4abbe50aa6b375c8d3e70886080b2a186cc0aac4d905ab15532c0d862bda633c9.jpg) no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 0;
+}
+.home {
+    margin-top: 150px;
+    width: 100%;
+    height: 100hv;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10%;
+}
+
+.home-text {
+    max-width: 37rem;
+}
+
+.home-text .text-h4 {
+    font-size: 1.5rem;
+    color: red;
+}
+
+.home-text .text-h2 {
+    width: 1000px;
+    margin-top: 50px;
+    color: #aaaaaa;
+    font-size:  4rem;
+    margin-bottom: 1rem;
+    line-height: 4rem;
+}
+
+.home-text p{
+    margin-bottom: 4rem;
+    color: #aaaaaa;
+}
+
+.home-btn {
+    padding: 15px 45px;
+    background: red;
+    color: white;
+    border-radius: 10px;
+    font-weight: 500;
+    transition: all 0.5;
+    box-shadow: 5px 5px 6px 0 rgba(0,0,0,.2);
+}
+
+.home-btn:hover {
+    background: #fc4c35;
+    box-shadow: 7px 7px 9px 0 rgba(0,0,0,.9);
+}
+
+@media (max-width:785px) {
+    .navigation{
+    padding: 18px
+    }
+
+}
+
+footer{
+    text-align: center;
+    position: fixed;
+    background: rgba(68, 68, 68, 0.252);
+    color: #aaaaaa;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    justify-content: center;
+    align-items: center;
+}
+
+.rodape{
+    margin-top: 10px;
+}
